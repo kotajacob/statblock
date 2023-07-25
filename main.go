@@ -190,7 +190,7 @@ func (m *Monster) getAttrs(e *colly.HTMLElement) {
 		m.Saves = value
 	case "Passive Perception":
 		// Are there other senses? Should we use a slice instead of a string?
-		m.Senses = value
+		m.Senses = "passive Perception " + value
 	case "Languages":
 		m.Languages = value
 	case "Challenge Rating":
